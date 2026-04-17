@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Surprise 🎬</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="audio/song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="bg-image"></div>
+<div class="bg-overlay"></div>
+
+<!-- 🎬 ENTRY -->
+<div class="game" id="game">
+
+    <div class="introText">
+        <h1>made this for you 💖</h1>
+        <p>It’s yours… if you can catch it 😏💖<br>and don’t laugh okay 😄</p>
+    </div>
+
+    <!-- 💖 MOVING BUTTON -->
+    <button id="catchBtn" onclick="unlock()">💖 Love You 💖</button>
+
+</div>
+
+<!-- 💖 MAIN -->
+<div class="main" id="main">
+
+    <div class="header">
+        <h1>Happy Birthday My Love 🎉💖</h1>
+        <p>I didn’t plan any of this…<br>but I’m so glad it’s you 💖</p>
+    </div>
+
+    <div class="carousel">
+
+        <button class="btn prev" onclick="prevImage()">❮</button>
+
+        <div class="carousel-track">
+
+            <img src="images/img1.jpg" class="slide">
+            <img src="images/img2.jpg" class="slide">
+            <img src="images/img3.jpg" class="slide">
+            <img src="images/img4.jpg" class="slide">
+            <img src="images/img5.jpg" class="slide">
+            <img src="images/img6.jpg" class="slide">
+            <img src="images/img7.jpg" class="slide">
+            <img src="images/img8.jpg" class="slide">
+            <img src="images/img9.jpg" class="slide">
+            <img src="images/img10.jpg" class="slide">
+            <img src="images/img11.jpg" class="slide">
+            <img src="images/img12.jpg" class="slide">
+            <img src="images/img13.jpg" class="slide">
+            <img src="images/img14.jpg" class="slide">
+            <img src="images/img15.jpg" class="slide">
+
+        </div>
+
+        <button class="btn next" onclick="nextImage()">❯</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
